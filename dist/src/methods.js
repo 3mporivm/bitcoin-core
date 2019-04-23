@@ -704,8 +704,8 @@ var _default = {
     category: 'rawtransactions',
     obfuscate: {
       request: {
-        default: params => set([...params], '[2]', map(params[2], () => '******')),
-        named: params => set(params, 'privkeys', map(params.privkeys || [], () => '******'))
+        default: params => (0, _lodash.set)([...params], '[2]', (0, _lodash.map)(params[2], () => '******')),
+        named: params => (0, _lodash.set)(params, 'privkeys', (0, _lodash.map)(params.privkeys || [], () => '******'))
       }
     },
     version: '>=0.7.0'
